@@ -1,0 +1,194 @@
+<html>
+<head>
+<title> Malak's Website </title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="styles.css"
+
+</head>
+
+<body background="..\images\bb.jpg">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Malak Hamshary</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#table_ex">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More Options
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+<h1>Welcome to my site!</h1>
+<p class="Top"> 
+    <img src="..\images\20190903_003619.jpg" width="20%" style="transform:rotate(90deg);"/>
+     <br/> 
+     <a href="https://google.com" target="_blank"> This is my link</a>
+     <br/> 
+     Hi, my name is malak, and this is my website
+     <br/><button> send </button>
+     </p>
+
+
+<p class="bottom" id="para2">
+Para 2
+</p>
+
+<h2 id="about"> About me</h2>
+<p class="bottom" id="para3">
+    This is my about section
+
+</p>
+
+<table border="1">
+
+    <tr> 
+        <td colspan="3" align="center"; style="padding: 10%;"> This is row 1 col 1 </td>
+    </tr>
+    
+    <tr> 
+        <td>this is row 2 col 1</td>
+    <td colspan="2" align="center">this is row 2 col 2</td>
+    </tr>
+    <tr> 
+        <td>this is row 3 col 1</td>
+        <td>this is row 3 col 2</td>
+        <td>this is row 3 col 3</td>
+    </tr>
+
+</table>
+<br/>
+
+<table border="1">
+
+    <tr> 
+        <td colspan="3" align="center"> This is row 1 col 1 </td>
+    </tr>
+    
+    <tr> 
+        <td>this is row 2 col 1</td>
+    <td colspan="2" align="center">this is row 2 col 2</td>
+    </tr>
+    <tr> 
+        <td>this is row 3 col 1</td>
+        <td>this is row 3 col 2</td>
+        <td>this is row 3 col 3</td>
+    </tr>
+
+</table>
+<br/>
+
+<table id="table_ex" border="1">
+
+    <tr> 
+        <td colspan="3" align="center"> This is row 1 col 1 </td>
+    </tr>
+    
+    <tr> 
+        <td>this is row 2 col 1</td>
+    <td colspan="2" align="center">this is row 2 col 2</td>
+    </tr>
+    <tr> 
+        <td>this is row 3 col 1</td>
+        <td>this is row 3 col 2</td>
+        <td>this is row 3 col 3</td>
+    </tr>
+
+</table>
+
+<br/>
+
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+  </div>
+
+  <br/>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"> This is row 1 column1</div>
+      <div class="col-sm-8"> This is row 1 column2     </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12"> This is row 2</div>
+    </div>
+    <div class="row">
+      <div class="col-sm">col-sm</div>
+      <div class="col-sm">col-sm</div>
+      <div class="col-sm">col-sm</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
